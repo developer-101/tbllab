@@ -1,4 +1,4 @@
-<table mat-table [dataSource]="peope">
+<table mat-table [dataSource]="peope" style="">
   <ng-container [matColumnDef]="column" *ngFor="let column of displayedColumns; index as index;">
     <th mat-header-cell *matHeaderCellDef>{{ displayedColumnNames[index] }}</th>
     <td mat-cell *matCellDef="let row">{{ row[column] }}</td>
